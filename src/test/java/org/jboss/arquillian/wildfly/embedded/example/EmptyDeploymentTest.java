@@ -32,7 +32,7 @@ public class EmptyDeploymentTest {
     @Test
     public void emptyInContainerTest(){
         System.out.println("=========================================");
-        System.out.println("This test should run inside the container");
+        System.out.println("Testing with arquillian :)");
         System.out.println("=========================================");
         System.out.println(myService.callMe("number"));
 
