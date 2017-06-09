@@ -19,6 +19,7 @@ public class Person {
     public Person(String name) {
 
         this.name = name;
+        id = String.valueOf(++Person.countId);
     }
 
     @Id
