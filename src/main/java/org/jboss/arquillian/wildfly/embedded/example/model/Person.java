@@ -8,11 +8,17 @@ import javax.persistence.Id;
  */
 @Entity
 public class Person {
+    private String name;
     private String id;
     static int countId = 0;
 
     public Person() {
         id = String.valueOf(++Person.countId);
+    }
+
+    public Person(String name) {
+
+        this.name = name;
     }
 
     @Id
@@ -22,5 +28,13 @@ public class Person {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
