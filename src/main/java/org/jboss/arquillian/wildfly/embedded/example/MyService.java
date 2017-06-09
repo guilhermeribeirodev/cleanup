@@ -27,6 +27,6 @@ public class MyService {
         Person p = list.get(0);
 
         return "Fetched list from database of size : "+list.size() + " - "
-                + p.getId();
+                + p.getId() + "name" + p.getName();
     }
 }
